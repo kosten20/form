@@ -9,23 +9,23 @@
 <body>
 	<div class="block">
 		<h2>Заполните ваши данные</h2>
-		<p>Оставь некоторую инфу о себе</p>
+		<p>Оставьте некоторую информацию о себе</p>
 		<form action="#" id="form_box">
-			<div class="box"><input type="text" placeholder="Ваше имя" minlength="4" maxlength="10">
-				<span class="placeholder">Ваше имя</span>
+			<div class="box"><input type="text" placeholder="Ваше имя" minlength="2" maxlength="10" pattern="^.*[а-яА-ЯЁё]$">
+				<span class="placeholder">Имя</span>
 				<span class="error">Введите ваше имя русскими буквами</span>
 			</div>
 			<div class="box"><input type="email" placeholder="Ваш email">
-				<span class="placeholder">Ваш email</span>
+				<span class="placeholder">Email</span>
 				<span class="error">Введите ваше email в следующем формате example@mail.com</span>
 			</div>
-			<div class="box"><input type="tel" placeholder="Ваш номер телефона" minlength="11" maxlength="18" pattern="\+\d{1}\s\d{3}\s\d{3}\s\d{2}\s\d{2}|^[\+|\d]\d\s[\(]\d{3}[)]\s\d{3}\-\d{2}\-\d{2}|\d\s\(\d{3}\)\s\d{3}\-\d{2}\-\d{2}|\d\s\d{3}\s\d{3}\s\d{2}\s\d{2}|^\+\d{11}|\d{11}">
-				<span class="placeholder">Ваш номер телефона</span>
-				<span class="error">Введите ваш номер телефона в следующем формате +7 950 750 00 00</span>
+			<div class="box"><input type="tel" placeholder="Номер телефона" minlength="11" maxlength="18" pattern=".+\d+">
+				<span class="placeholder">Введите ваш номер телефона</span>
+				<span class="error">Введите ваш номер телефона в следующем виде +7 (950) 750-00-00</span>
 			</div>
 			<div class="box">
 				<textarea placeholder="Коментарий" minlength="2"></textarea>
-				<span class="placeholder">Ваш коментарий</span>
+				<span class="placeholder">Коментарий</span>
 			</div>
 			<button type="submit">Отправить</button>
 		</form>
