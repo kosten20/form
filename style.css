@@ -44,6 +44,7 @@ body {
 	border-bottom: 1px solid #cdcdcd;
 	border-bottom-right-radius: 20px;
 	outline: none;
+	resize: none;
 }
 button {
 	margin: 20px 0px;
@@ -78,11 +79,6 @@ button {
 	color: #747474;
 	transform: translateX(-10px) translateY(-32px);
 }
-.box textarea:focus ~ .placeholder {
-	font-size: 12px;
-	color: #747474;
-	transform: translateX(-10px) translateY(-32px);
-}
 .box input:focus:placeholder-shown  ~ .placeholder {
 	color: rgba(0, 0, 0, 0);
 }
@@ -95,17 +91,15 @@ button {
 .box input:invalid:not(:placeholder-shown) {
   border-color: red;
 }
-.box textarea:valid:not(:placeholder-shown) {
-  border-color: green;
+/**/
+.box input:valid:not(:placeholder-shown) ~ .placeholder{
+  display: none;
 }
-.box textarea:invalid:not(:placeholder-shown) {
-  border-color: red;
+.box input:invalid:not(:placeholder-shown) ~ .placeholder{
+  display: block;
 }
 .box input:invalid:not(:placeholder-shown) ~ .error{
   display: block;
-}
-.box textarea:invalid:not(:placeholder-shown) ~ .error {
-  display: inline-block;
 }
 #form_box:valid button[type="submit"] {
 	background: green;

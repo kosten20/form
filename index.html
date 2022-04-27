@@ -11,20 +11,20 @@
 		<h2>Заполните ваши данные</h2>
 		<p>Оставьте некоторую информацию о себе</p>
 		<form action="#" id="form_box">
-			<div class="box"><input type="text" placeholder="Ваше имя" minlength="2" maxlength="10" pattern="^.*[а-яА-ЯЁё]$">
+			<div class="box"><input type="text" placeholder="Ваше имя" maxlength="12" pattern="^.*[а-яА-ЯЁё]$">
 				<span class="placeholder">Имя</span>
 				<span class="error">Введите ваше имя русскими буквами</span>
 			</div>
 			<div class="box"><input type="email" placeholder="Ваш email">
 				<span class="placeholder">Email</span>
-				<span class="error">Введите ваше email в следующем формате example@mail.com</span>
+				<span class="error">Введите ваш email в следующем формате example@mail.com</span>
 			</div>
-			<div class="box"><input type="tel" placeholder="Номер телефона" minlength="11" maxlength="18" pattern=".+\d+">
+			<div class="box"><input type="tel" placeholder="Номер телефона" pattern="(\+[78]|[78])(\s\(\d{3}\)|\s\d{3})(\s\d{3})(\s|\-)(\d{2})(\s|\-)(\d{2})|(\+\d{11}|\d{11})" maxlength="18">
 				<span class="placeholder">Введите ваш номер телефона</span>
 				<span class="error">Введите ваш номер телефона в следующем виде +7 (950) 750-00-00</span>
 			</div>
 			<div class="box">
-				<textarea placeholder="Коментарий" minlength="2"></textarea>
+				<textarea placeholder="Коментарий"></textarea>
 				<span class="placeholder">Коментарий</span>
 			</div>
 			<button type="submit">Отправить</button>
